@@ -436,6 +436,9 @@ body{
     .process-left h3{
         font-size: 30px;
     }
+    .tooltips{
+        height: 29vh;
+    }
     .count {
         font-size: 50px;
     }
