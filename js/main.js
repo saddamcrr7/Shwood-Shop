@@ -99,8 +99,6 @@ $(document).ready(function(){
             $('.grey img').removeClass('lens-border');
             $(".price").text("$ 199.00");
         });
-
-
         $(".grey").click(function(){
             $('.name').remove(lensName);
             $('.grey img').addClass('lens-border');
@@ -154,6 +152,7 @@ $(document).ready(function(){
             $('.tooltips1 .plus, .tooltips2 .plus, .tooltips3 .plus').css( {'transform':'rotate(0deg)'});                        
           });
     });
+
     //for scroll to count
     var a = 0;
     $(window).scroll(function() {
@@ -173,12 +172,14 @@ $(document).ready(function(){
         a = 1;
     }
     });
+
     //scroll to fade-in bottom
     window.sr = ScrollReveal();
       sr.reveal('.product-about, #mini-slider, #process, #material',{
         duration: 1500,
         origin: 'bottom'
       });
+
       //Add smooth scrolling to all links
       $(".material-text a").on('click', function(event) {
         if (this.hash !== "") {
