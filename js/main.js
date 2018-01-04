@@ -119,7 +119,7 @@ $(document).ready(function(){
             var $this = $(this);
             var opacity = !$this.data("opacity");
             $this.data("opacity", opacity);
-            $(".tooltip-text-1").css({"opacity": opacity ? "1" : "", "top": opacity ? "15%" : ""});
+            $(".tooltip-text-1").css({"opacity": opacity ? "1" : "", "top": opacity ? "-180px" : ""});
             $(".tooltip-text-2, .tooltip-text-3, .tooltip-text-4").css("opacity", "0");
             $('.tooltips1 .plus').css( {'transform': opacity ? 'rotate(90deg)' : ""});
             $('.tooltips2 .plus, .tooltips3 .plus, .tooltips4 .plus').css( {'transform':'rotate(0deg)'});            
@@ -128,7 +128,7 @@ $(document).ready(function(){
             var $this = $(this);
             var opacity = !$this.data("opacity");
             $this.data("opacity", opacity);
-            $(".tooltip-text-2").css({"opacity": opacity ? "1" : "", "top": opacity ? "-8%" : ""});
+            $(".tooltip-text-2").css({"opacity": opacity ? "1" : "", "top": opacity ? "-180px" : ""});
             $(".tooltip-text-1, .tooltip-text-3, .tooltip-text-4").css("opacity", "0");
             $('.tooltips2 .plus').css( {'transform': opacity ? 'rotate(90deg)' : ""});
             $('.tooltips1 .plus, .tooltips3 .plus, .tooltips4 .plus').css( {'transform':'rotate(0deg)'});            
@@ -138,7 +138,7 @@ $(document).ready(function(){
             var $this = $(this);
             var opacity = !$this.data("opacity");
             $this.data("opacity", opacity);
-            $(".tooltip-text-3").css({"opacity": opacity ? "1" : "", "top": opacity ? "-8%" : ""});
+            $(".tooltip-text-3").css({"opacity": opacity ? "1" : "", "top": opacity ? "-200px" : ""});
             $(".tooltip-text-1, .tooltip-text-2, .tooltip-text-4").css("opacity", "0");
             $('.tooltips3 .plus').css( {'transform': opacity ? 'rotate(90deg)' : ""});
             $('.tooltips1 .plus, .tooltips2 .plus, .tooltips4 .plus').css( {'transform':'rotate(0deg)'});            
@@ -148,7 +148,7 @@ $(document).ready(function(){
             var $this = $(this);
             var opacity = !$this.data("opacity");
             $this.data("opacity", opacity);
-            $(".tooltip-text-4").css({"opacity": opacity ? "1" : "", "top": opacity ? "30%" : ""});
+            $(".tooltip-text-4").css({"opacity": opacity ? "1" : "", "top": opacity ? "-200px" : ""});
             $(".tooltip-text-1, .tooltip-text-2, .tooltip-text-3").css("opacity", "0");
             $('.tooltips4 .plus').css( {'transform': opacity ? 'rotate(90deg)' : ""});
             $('.tooltips1 .plus, .tooltips2 .plus, .tooltips3 .plus').css( {'transform':'rotate(0deg)'});                        

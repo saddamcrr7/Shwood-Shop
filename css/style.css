@@ -19,7 +19,7 @@ body{
 .showcase-contents li{
     display: inline-block;
     width: 12%;
-    height: 50vh;
+    height: 400px;
     cursor: w-resize;
     z-index: 2;
 }
@@ -250,7 +250,7 @@ body{
 
 .tooltips{
     position: relative;
-    height: 67vh;
+    height: 450px;
 }
 .tooltips1, .tooltips2, .tooltips3, .tooltips4{
     width: 35px;
@@ -259,7 +259,6 @@ body{
     border-radius: 35px;
     position: absolute;
     cursor: pointer;
-    overflow: hidden;
     animation: animate 3s linear infinite;
     z-index: 2;
 }
@@ -313,10 +312,12 @@ body{
 }
 .tooltip-text-1, .tooltip-text-2, .tooltip-text-3, .tooltip-text-4{
     position: absolute;
-    width: 38%;
+    width: 200px;
     background: rgb(236, 236, 236);
     transition: all 0.3s;
     opacity: 0;
+    top: -150px;
+    left: -83px;
 }
 .tooltip-text-1::after, .tooltip-text-2::after, .tooltip-text-3::after, .tooltip-text-4::after{
     content: '';
@@ -327,27 +328,8 @@ body{
     background: rgb(236, 236, 236);
     bottom: -10px;
     left: 45%;
+    
 }
-.tooltip-text-1{
-    top: 25%;
-    left: -11%;
-}
-.tooltip-text-2{
-    top: 3%;
-    left: 22%;
-}
-
-.tooltip-text-3{
-    top: 3%;
-    left: 54%;
-}
-
-.tooltip-text-4{
-    top: 40%;
-    left: 54%;
-}
-
-
 
 .material-text h2{
     font-size: 46px;
@@ -424,20 +406,16 @@ body{
     text-decoration: none;
 }
 /* responsive CSS */
-@media only screen and (max-width: 425px) {
-    .tooltips{
-        height: 30vh;
-    }
-    .showcase-contents li{
-        height: 20vh;
-    }
-}
+
 @media only screen and (max-width: 768px) {
+    .showcase-contents li{
+        height: 250px;
+    }
     .process-left h3{
         font-size: 30px;
     }
     .tooltips{
-        height: 29vh;
+        height: 350px;
     }
     .count {
         font-size: 50px;
@@ -447,6 +425,14 @@ body{
     }
     .tab-content{
         height: 280px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .tooltips{
+        height: 200px;
+    }
+    .showcase-contents li{
+        height: 170px;
     }
 }
 /* animation for tolltips button*/
