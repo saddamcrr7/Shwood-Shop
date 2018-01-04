@@ -180,7 +180,7 @@ $(document).ready(function(){
         origin: 'bottom'
       });
       //Add smooth scrolling to all links
-      $("a").on('click', function(event) {
+      $(".material-text a").on('click', function(event) {
         if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
