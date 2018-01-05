@@ -23,11 +23,11 @@ $(document).ready(function(){
     $(".item-6").mouseenter(function(){
         $(".item-6 img").css("display", "block");
         $(".item-1 img, .item-2 img, .item-3 img, .item-4 img, .item-5 img,  .item-7 img" ).css("display", "none"); 
-    })
+    });
     $(".item-7").mouseenter(function(){
         $(".item-7 img").css("display", "block");
         $(".item-1 img, .item-2 img, .item-3 img, .item-4 img, .item-5 img, .item-6 img").css("display", "none");
-    })
+    });
     // HOVER TO ROTATE END
 
     //CLICK TO CHANGE IMAGE, PRICE AND NAME
@@ -113,7 +113,7 @@ $(document).ready(function(){
             $(".full-screen-slider").css("display", "none");
         });
         // tooltips show and hide
-        $(".circle-1").click(function() {
+        $(".circle-1,.tooltips1 .plus, .tooltips1 .minus").click(function() {
             var $this = $(this);
             var display = !$this.data("display");
             $this.data("display", display);
@@ -122,7 +122,7 @@ $(document).ready(function(){
             $(".tooltips1 .plus").css( {"transform": display ? "rotate(90deg)" : ""});
             $(".tooltips2 .plus, .tooltips3 .plus, .tooltips4 .plus").css( {"transform":"rotate(0deg)"});            
           });
-        $(".circle-2").click(function() {
+        $(".circle-2,.tooltips2 .plus, .tooltips2 .minus").click(function() {
             var $this = $(this);
             var display = !$this.data("display");
             $this.data("display", display);
@@ -132,7 +132,7 @@ $(document).ready(function(){
             $(".tooltips1 .plus, .tooltips3 .plus, .tooltips4 .plus").css( {"transform":"rotate(0deg)"});            
             
           });
-        $(".circle-3").click(function() {
+        $(".circle-3,.tooltips3 .plus, .tooltips3 .minus").click(function() {
             var $this = $(this);
             var display = !$this.data("display");
             $this.data("display", display);
@@ -142,7 +142,7 @@ $(document).ready(function(){
             $(".tooltips1 .plus, .tooltips2 .plus, .tooltips4 .plus").css( {"transform":"rotate(0deg)"});            
             
           });
-        $(".circle-4").click(function() {
+        $(".circle-4,.tooltips4 .plus, .tooltips4 .minus").click(function() {
             var $this = $(this);
             var display = !$this.data("display");
             $this.data("display", display);
@@ -157,7 +157,7 @@ $(document).ready(function(){
     var a = 0;
     $(window).scroll(function() {
     var oTop = $(".count").offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
+    if (a === 0 && $(window).scrollTop() > oTop) {
         $(".count").each(function () {
             $(this).prop("Counter",0).animate({
                 Counter: $(this).text()
@@ -169,6 +169,7 @@ $(document).ready(function(){
                 }
             });
         });
+        $(".process-video video").trigger("play");
         a = 1;
     }
     });

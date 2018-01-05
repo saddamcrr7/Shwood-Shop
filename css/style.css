@@ -278,6 +278,7 @@ body{
     position: absolute;
     top: 50%;
     left: 20%;
+    cursor: pointer
 }
 .plus{
     height: 20px;
@@ -287,6 +288,7 @@ body{
     top: 22%;
     left: 46%;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .tooltips2{ 
     top: 26%;
@@ -419,6 +421,7 @@ body{
     .tooltips{
         height: 350px;
     }
+  
     .count {
         font-size: 50px;
     }
@@ -433,7 +436,7 @@ body{
 @media only screen and (max-width: 425px) {
     .tooltips{
         height: 200px;
-    }
+    } 
     .showcase-contents li{
         height: 170px;
     }
